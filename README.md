@@ -1,0 +1,2 @@
+# teamProj
+QR Finder App
