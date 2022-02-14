@@ -15,34 +15,19 @@ input[type=text] {
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
 }
-input[type=text] {
-  width: 30%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
+
 </style>
 </head>
 <body>
 
-<h2>Input the your first feeling!</h2>
+<h2>Please tell us how your feeling!</h2>
 
 <form>
   <input id="first-box" type="text" name="My Feelings" placeholder="My Feelings...">
 </form>
-<h2>Input another feeling please.</h2>
-
-  <input id="second-box" type="text" name="My Feelings" placeholder="My Feelings...">
-  <br>
-  <br>
-  
+ 
   <form>
+    <br>
     <input id="submit-butt" type="submit">
 
     <br>
@@ -50,8 +35,7 @@ input[type=text] {
     </form>
 <form>
 </form>
-<img id="code-box" src="https://qrickit.com/api/qr.php?d=http://anyurl
-&bgdcolor=C0F912&qrsize=150&t=p&e=m">
+<img id="code-box" src="https://api.qrserver.com/v1/create-qr-code/?&size=150x150&data=example">
 <script src="index.js"></script>
 </body>
 </html>
