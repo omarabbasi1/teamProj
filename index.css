@@ -3,23 +3,34 @@ body {
   background-color: #cccccc;
  }
   
-  heading {
-    background-color: #aca6a6;
-    margin-bottom: 20px;
-    padding: 5px 0px 5px 15px;
-  }
+h1 {
+  font-family: fantasy;
+  color: rgb(59, 38, 58)
   
-  title {
-    background-color: #333333;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-  }
+}
 
-  div {
-    background-color: green;
-    opacity: 0.3;
-  }
+input {
+  margin: auto;
+  width: 30%;
+  border: 3px solid green;
+  padding: 10px;
+}
 
+img[src="OurLogo.png"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  position:absolute;
+  top:0;
+  right:0;
+}
+ 
+#quoteSpot {
+  font-size: 20px;
+}
+
+#submit-butt {
   
-  /* Add additional css for categories here. */
-  
+  padding: auto;
+}

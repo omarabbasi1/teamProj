@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="index.css">
-<style> 
-input[type=text] {
-  width: 30%;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('searchicon.png');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
+  <html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script defer src="index.js"></script>
+        <style> 
+          input[type=text] {
+            width: 30%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+          }
 
-</style>
-</head>
-<body>
+        </style>
+    </head>
+    <body>
 
-<h2>In one color, please tell us how your feeling!</h2>
+      <h1>In one word, please tell us how you're feeling!</h1>
 
-<form>
-  <input id="first-box" type="text" name="My Feelings Color" placeholder="My Feelings...">
-</form>
- 
-  <form>
-    <br>
-    <input id="submit-butt" type="submit">
-
+      <form id ="form">
+        <input id="first-box" type="text" name="My Feelings Color" placeholder="My Feelings..."> 
     <br>
     <br>
-    </form>
-<form>
-</form>
-<img id="code-box" src="https://api.qrserver.com/v1/create-qr-code/?&size=150x150&data=example">
-<script src="index.js"></script>
-</body>
+        <input id="submit-butt" type="submit">
+    <br>  
+      </form> 
+    <br>
+    <ul id = 'quoteSpot'></ul>
+          <img id="code-box" src="OurLogo.png">    
+    </body>
 </html>
