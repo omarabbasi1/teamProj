@@ -14,7 +14,6 @@ qrCode.addEventListener("mouseover", function (){alert("Created by: Beth, Omar, 
 form.addEventListener("submit", (renderOneQuote) => handleSubmit(e))
 
 
-
 // Fetchers
 function fetchAllQuotes(quoteArr) {
     return fetch(url)
@@ -23,32 +22,21 @@ function fetchAllQuotes(quoteArr) {
 }
 
 // Render Functions
-
-// function renderAllQuotes(quoteArr) {
-//     quoteArr.forEach(renderOneQuote)
-// }
-
 function renderOneQuote(quoteArr) {
     let randomValue = quoteArr[Math.floor(Math.random() * quoteArr.length)]
     let li = document.createElement('li')
     li.textContent = randomValue.text
 
     quoteSpot.appendChild(li)
-    // console.log(randomValue)
 
-    //form.addEventListener("submit", (e)=> handleSubmit(e))
+    li.addEventListener("click", handleClick)
 
-    // function handleSubmit(e) {
-    //     e.preventDefault()
-    //     console.log("testing submit")
-    //     renderOneQuote()
-    // }
-
+    function handleClick(){
+        //console.log("testing click")
+        li.textContent = randomValue.text +   
+        `(Author - ${randomValue.author})`
+    }
 }
-
-
-
-
     
 // Event Handlers
 function handleSubmit(e) {
