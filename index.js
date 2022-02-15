@@ -7,6 +7,7 @@ let box1 = document.getElementById('first-box')
 let qrCode = document.getElementById("code-box")
 let quoteSpot = document.querySelector('#quoteSpot')
 let form = document.querySelector("#form")
+let p = document.querySelector("#response")
 
 
 // Listeners
@@ -42,8 +43,12 @@ function renderOneQuote(quoteArr) {
 function handleSubmit(e) {
     e.preventDefault()
     console.log("testing submit")
+    let feeling = (e.target["first-box"].value)
+    p.innerText = `Here is a quote for your ${feeling} day:`
+
     
-    renderOneQuote()
+     //renderOneQuote()
+    form.reset()
 }
 
 // / Initializer
